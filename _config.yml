@@ -1,0 +1,26 @@
+title: Floodline
+email: hello@floodline.co
+description: >-
+  Technology consulting for ambitious startups. We help founders build
+  the right thing, the right way.
+baseurl: ""
+url: ""
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Custom variables
+colors:
+  primary_blue: "#003761"
+  secondary_blue: "#3aa2db"
+  light_brown: "#9a8478"
+  prairie_brown: "#51453e"
+  grass_green: "#a9b85b"
+
+# Exclude theme default
+theme: null
+
+# Sass config
+sass:
+  style: compressed
