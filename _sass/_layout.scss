@@ -1,0 +1,149 @@
+// Header
+.site-header {
+  padding: $space-md 0;
+  background: $white;
+  border-bottom: 1px solid rgba($light-brown, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: $font-size-xl;
+    font-weight: 700;
+    color: $primary-blue;
+    text-decoration: none;
+  }
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: $space-xs;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $primary-blue;
+    transition: transform $transition-base;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+  }
+}
+
+.site-nav {
+  display: flex;
+  gap: $space-lg;
+
+  a {
+    color: $prairie-brown;
+    font-weight: 500;
+    transition: color $transition-fast;
+
+    &:hover,
+    &.active {
+      color: $primary-blue;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $white;
+    flex-direction: column;
+    padding: $space-md $container-padding;
+    gap: $space-md;
+    border-bottom: 1px solid rgba($light-brown, 0.2);
+
+    &.open {
+      display: flex;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  background: $primary-blue;
+  color: $white;
+  padding: $space-xl 0;
+  margin-top: $space-3xl;
+
+  .logo {
+    font-size: $font-size-lg;
+    font-weight: 700;
+    color: $white;
+  }
+
+  p {
+    color: rgba($white, 0.7);
+    font-size: 0.875rem;
+    margin-top: $space-xs;
+  }
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: $space-lg;
+}
+
+.footer-nav {
+  display: flex;
+  gap: $space-md;
+
+  a {
+    color: rgba($white, 0.8);
+    font-size: 0.875rem;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+// Main content
+main {
+  min-height: calc(100vh - 200px);
+}
+
+// Section spacing
+.section {
+  padding: $space-3xl 0;
+
+  &--alt {
+    background: $bg-alt;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: $space-xl;
+
+  h2 {
+    margin-bottom: $space-sm;
+  }
+
+  p {
+    color: $light-brown;
+    font-size: $font-size-lg;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

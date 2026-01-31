@@ -1,0 +1,248 @@
+// Buttons
+.btn {
+  display: inline-block;
+  padding: $space-sm $space-lg;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &--primary {
+    background: $primary-blue;
+    color: $white;
+
+    &:hover {
+      background: darken($primary-blue, 8%);
+      color: $white;
+    }
+  }
+
+  &--secondary {
+    background: transparent;
+    color: $primary-blue;
+    border: 2px solid $primary-blue;
+
+    &:hover {
+      background: $primary-blue;
+      color: $white;
+    }
+  }
+}
+
+// Hero
+.hero {
+  padding: $space-3xl 0;
+  text-align: center;
+
+  h1 {
+    margin-bottom: $space-md;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    font-size: $font-size-lg;
+    color: $light-brown;
+    max-width: 600px;
+    margin: 0 auto $space-lg;
+  }
+}
+
+// Value Props
+.value-props {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-lg;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.value-prop {
+  text-align: center;
+  padding: $space-lg;
+
+  .icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto $space-md;
+    color: $secondary-blue;
+  }
+
+  h3 {
+    font-size: $font-size-lg;
+    margin-bottom: $space-sm;
+  }
+
+  p {
+    color: $light-brown;
+  }
+}
+
+// CTA Section
+.cta-section {
+  text-align: center;
+  padding: $space-3xl 0;
+
+  h2 {
+    margin-bottom: $space-md;
+  }
+}
+
+// Cards
+.card {
+  background: $white;
+  border-radius: 8px;
+  padding: $space-lg;
+  box-shadow: $shadow-md;
+  border: 1px solid rgba($light-brown, 0.1);
+}
+
+// Team Grid
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-lg;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-member {
+  text-align: center;
+
+  .photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto $space-md;
+    background: $bg-alt;
+  }
+
+  h3 {
+    font-size: $font-size-lg;
+    margin-bottom: $space-xs;
+  }
+
+  .role {
+    color: $light-brown;
+    font-size: 0.875rem;
+    margin-bottom: $space-sm;
+  }
+
+  p {
+    font-size: 0.9375rem;
+  }
+}
+
+// Service Cards
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+}
+
+.service-card {
+  h3 {
+    margin-bottom: $space-sm;
+  }
+
+  p {
+    margin-bottom: $space-sm;
+  }
+
+  ul {
+    margin-left: $space-md;
+    color: $prairie-brown;
+
+    li {
+      margin-bottom: $space-xs;
+    }
+  }
+}
+
+// Contact Form
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .form-group {
+    margin-bottom: $space-md;
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: $space-xs;
+      color: $prairie-brown;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: $space-sm;
+      font-family: $font-family;
+      font-size: $font-size-base;
+      border: 1px solid rgba($light-brown, 0.3);
+      border-radius: 6px;
+      transition: border-color $transition-fast;
+
+      &:focus {
+        outline: none;
+        border-color: $secondary-blue;
+      }
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.contact-fallback {
+  text-align: center;
+  margin-top: $space-lg;
+  color: $light-brown;
+
+  a {
+    font-weight: 500;
+  }
+}
+
+// Page Header
+.page-header {
+  padding: $space-xl 0;
+  text-align: center;
+  border-bottom: 1px solid rgba($light-brown, 0.1);
+
+  h1 {
+    margin-bottom: $space-sm;
+  }
+
+  p {
+    color: $light-brown;
+    font-size: $font-size-lg;
+  }
+}
+
+// About content
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: $space-md;
+  }
+}
