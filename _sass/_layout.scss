@@ -1,3 +1,25 @@
+// Hero section background
+.hero {
+  background: 
+    linear-gradient(rgba($white, 0.88), rgba($primary-blue, 0.52)),
+    url('/assets/images/lake_boat.svg');
+  background-position: center 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 420px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-desc-lower {
+  color: $prairie-brown;
+}
+}
 // Header
 .site-header {
   padding: $space-md 0;
@@ -12,12 +34,25 @@
     justify-content: space-between;
     align-items: center;
   }
-
+  
   .logo {
-    font-size: $font-size-xl;
-    font-weight: 700;
-    color: $primary-blue;
-    text-decoration: none;
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 1;
+    object-fit: contain;
+    object-position: left center;
+    transition: filter 0.2s;
+    filter: drop-shadow(0 2px 6px rgba($primary-blue, 0.05));
+  
+    &:focus {
+      outline: 2px solid $primary-blue;
+      outline-offset: 2px;
+    }
+    &:active {
+      filter: brightness(0.95);
+    }
   }
 }
 

@@ -93,6 +93,23 @@
   h2 {
     margin-bottom: $space-md;
   }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  .contact-img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .secondary-text {
+    margin-bottom: 2rem;
+  }
 }
 
 // Cards
@@ -146,11 +163,12 @@
 // Service Cards
 .services-list {
   display: flex;
-  flex-direction: column;
   gap: $space-lg;
 }
 
 .service-card {
+  width: 50%;
+
   h3 {
     margin-bottom: $space-sm;
   }
@@ -226,6 +244,8 @@
   padding: $space-xl 0;
   text-align: center;
   border-bottom: 1px solid rgba($light-brown, 0.1);
+
+  background-color: rgba($secondary-blue, 0.1);
 
   h1 {
     margin-bottom: $space-sm;
