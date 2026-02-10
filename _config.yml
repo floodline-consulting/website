@@ -3,7 +3,7 @@ email: info@floodlineconsulting.com
 description: >-
   Technology consulting for ambitious startups. We help founders build
   the right thing, the right way.
-baseurl: "/website"
+baseurl: ""
 url: ""
 
 # Build settings
